@@ -1,5 +1,5 @@
 # Userflow example
-Python userflow for registering users to the myHolmatroPortal application.
+Python userflow for registering users to the myHolmatroPortal application using calls to the msgraph api via a dedicated client app registration.
 
 __Requires:__ Python >=3.8 
 
