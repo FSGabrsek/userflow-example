@@ -8,7 +8,7 @@ __Requires:__ Python >=3.8
 2. activate the venv and start the `python` interactive shell.
 3. import the main file and run the `grant_assignment` or `revoke_assignment` methods.
 ```
-(venv) \userflow-example> python
+(venv) HOLMATRO+hnl-fg@HNL-000000 …/userflow-example % python
 Python 3.12.2 (tags/v3.12.2:6abddd9, Thu  1 1970, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> from main import grant_assignment, revoke_assignment
@@ -17,7 +17,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> revoke_assignment("00000000-0000-0000-0000-000000000000")
 True
 >>> exit()
-(venv) \userflow-example> deactivate
+HOLMATRO+hnl-fg@HNL-000000 …/userflow-example % deactivate
 ```
 
 ### Final steps
