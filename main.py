@@ -3,7 +3,7 @@ import requests
 client_id = ""
 client_secret = ""
 
-app_id = ""
+app_principal_id = ""
 role_id = ""
 
 def client_credentials():
@@ -28,7 +28,7 @@ def post_assignment(user_id: str):
         },
         json={
             "principalId": user_id,
-            "resourceId": app_id,
+            "resourceId": app_principal_id,
             "appRoleId": role_id
         })
     
@@ -36,7 +36,7 @@ def post_assignment(user_id: str):
 
 def get_assignment(user_id: str):
     r = requests.get(
-        f"https://graph.microsoft.com/v1.0/users/{user_id}/appRoleAssignments?$filter=resourceId eq {app_id}",
+        f"https://graph.microsoft.com/v1.0/users/{user_id}/appRoleAssignments?$filter=resourceId eq {app_principal_id}",
         headers={ "Authorization": f"Bearer {client_credentials()}" })
     
     return r.json()
