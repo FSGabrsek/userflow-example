@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "userflow-example"
+version = "1.0.0"
+dependencies = [
+    "python-dotenv"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]

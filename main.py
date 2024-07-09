@@ -1,10 +1,14 @@
 import requests
 
-client_id = ""
-client_secret = ""
+from dotenv import load_dotenv
+from os import getenv
 
-app_principal_id = ""
-role_id = ""
+load_dotenv()
+client_id = getenv("CLIENT_ID")
+client_secret = getenv("CLIENT_SECRET")
+
+app_principal_id = getenv("APP_PRINCIPAL_ID")
+role_id = getenv("ROLE_ID")
 
 def client_credentials():
     r = requests.post(
