@@ -17,7 +17,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> revoke_assignment(user_id="00000000-0000-0000-0000-000000000000")
 True
 >>> exit()
-HOLMATRO+hnl-fg@HNL-000000 …/userflow-example % deactivate
+(venv) HOLMATRO+hnl-fg@HNL-000000 …/userflow-example % deactivate
 ```
 
 ### Final steps
