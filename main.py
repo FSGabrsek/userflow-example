@@ -23,7 +23,7 @@ def client_credentials():
 
     return r.json()["access_token"]
 
-def post_assignment(user_id: str):
+def grant_assignment(user_id: str):
     r = requests.post(
         f"https://graph.microsoft.com/v1.0/users/{user_id}/appRoleAssignments",
         headers={ 
