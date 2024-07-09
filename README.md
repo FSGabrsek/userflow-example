@@ -7,7 +7,7 @@ __Requires:__ Python >=3.8
 1. run `make install` to create a venv in the current working directory and install the project.
 2. activate the venv and start the `python` interactive shell.
 3. import the main file and run the `grant_assignment` or `revoke_assignment` methods.
-```python
+```
 (venv) \userflow-example> python
 Python 3.12.2 (tags/v3.12.2:6abddd9, Thu  1 1970, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
