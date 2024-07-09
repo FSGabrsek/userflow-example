@@ -4,7 +4,7 @@ Python userflow for registering users to the myHolmatroPortal application using 
 __Requires:__ Python >=3.8 
 
 ## Initialize project
-1. run `make install` to create a venv in the current working directory and install the project.
+1. run `make init` to create a venv in the current working directory and install the project.
 2. activate the venv and start the `python` interactive shell.
 3. import the main file and run the `grant_assignment` or `revoke_assignment` methods.
 ```
