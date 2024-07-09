@@ -10,7 +10,7 @@ client_secret = getenv("CLIENT_SECRET")
 app_principal_id = getenv("APP_PRINCIPAL_ID")
 role_id = getenv("ROLE_ID")
 
-def client_credentials():
+def client_credentials() -> str:
     r = requests.post(
         "https://login.microsoftonline.com/myhmb2c.onmicrosoft.com/oauth2/v2.0/token",
         headers={ "Content-Type": "application/x-www-form-urlencoded" },
@@ -23,7 +23,7 @@ def client_credentials():
 
     return r.json()["access_token"]
 
-def grant_assignment(user_id: str):
+def grant_assignment(user_id: str) -> dict:
     r = requests.post(
         f"https://graph.microsoft.com/v1.0/users/{user_id}/appRoleAssignments",
         headers={ 
@@ -38,14 +38,14 @@ def grant_assignment(user_id: str):
     
     return r.json()
 
-def get_assignment(user_id: str):
+def get_assignment(user_id: str) -> dict:
     r = requests.get(
         f"https://graph.microsoft.com/v1.0/users/{user_id}/appRoleAssignments?$filter=resourceId eq {app_principal_id}",
         headers={ "Authorization": f"Bearer {client_credentials()}" })
     
     return r.json()
 
-def revoke_assignment(user_id):
+def revoke_assignment(user_id: str) -> bool:
     r = requests.delete(
         f"https://graph.microsoft.com/v1.0/users/{user_id}/appRoleAssignments/{get_assignment(user_id)["value"][0]["id"]}",
         headers={ "Authorization": f"Bearer {client_credentials()}" })
