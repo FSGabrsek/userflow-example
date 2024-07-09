@@ -6,7 +6,8 @@ build-backend = "hatchling.build"
 name = "userflow-example"
 version = "1.0.0"
 dependencies = [
-    "python-dotenv"
+    "python-dotenv",
+    "requests"
 ]
 
 [tool.hatch.build.targets.wheel]

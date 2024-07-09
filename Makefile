@@ -12,4 +12,5 @@ venv:
 
 clean:
 	rm -rf ./venv
-	find -iname "*.pyc" -delete
+	rm -rf ./__pycache__
+	rm -f "*.pyc"
