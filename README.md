@@ -17,8 +17,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> revoke_assignment("00000000-0000-0000-0000-000000000000")
 True
 >>> exit()
-(venv) \userflow-example>
+(venv) \userflow-example> deactivate
 ```
 
 ### Final steps
-* run `make clean` to delete the venv and clean up any cache files
+* run `make clean` to delete the venv and clean up any cache files.
