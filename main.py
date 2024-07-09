@@ -47,4 +47,3 @@ def revoke_assignment(user_id):
         headers={ "Authorization": f"Bearer {client_credentials()}" })
     
     return r.ok
-
