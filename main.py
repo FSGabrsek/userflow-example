@@ -1,9 +1,11 @@
 import requests
-
-from dotenv import load_dotenv
 from os import getenv
 
+## Local only, remove in function app
+from dotenv import load_dotenv
 load_dotenv()
+##
+
 client_id = getenv("CLIENT_ID")
 client_secret = getenv("CLIENT_SECRET")
 
